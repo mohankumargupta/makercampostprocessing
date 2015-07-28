@@ -1,6 +1,8 @@
 folders:
 inbox -> drop your files in here (.nc files)
+
 converted -> sticks M3 and M5 commands for laser cutting, as well as adding S255 before first M3
+
 outbox -> original files that were processed
 
 convert2.py is written for python 2
