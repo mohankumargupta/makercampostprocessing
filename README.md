@@ -1,3 +1,19 @@
+REQUIREMENTS: Python 3
+
+Download the zip as per usual 
+
+
+TWO OPTIONS:
+
+Option 1: (RECOMMENDED)
+Just double-click laserfriendlygcodewithUI.py 
+Select gcode file (eg. part.nc) it will then create a file called part_laser.nc
+
+
+IGNORE THE REST OF THIS FOR FIRST-TIME USE
+Option 2:(ADVANCED USAGE)
+Double click on convert3.py
+
 folders:
 inbox -> drop your files in here (.nc files)
 
