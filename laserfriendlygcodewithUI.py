@@ -26,6 +26,21 @@ def insertS255(filename):
    
       print(line, end='')
 
+def replaceM30withtilda(filename):
+  searchforfirstM3 = re.compile(r'M30')
+  flag = False
+  with fileinput.input(filename, inplace=True) as f:
+    print(filename)
+    for line in f:
+      if flag is False:
+        match = searchforfirstM3.match(line)
+        if match is not None:
+          print('~')
+          flag = True
+          return
+   
+      print(line, end='')
+
 file = tkinter.filedialog.askopenfilenames( )
 if (file):
   originalfilefullpath = file[0]
@@ -37,4 +52,5 @@ if (file):
   infile = originalfilefullpath
   call(['gcodelaseropt', infile ,'-o', outfile])
   insertS255(outfile)
+  replaceM30withtilda(outfile)
 
